@@ -1,0 +1,60 @@
+{
+  "//": {
+    "metadata": {
+      "backend": "remote",
+      "cloud": "tfc",
+      "stackName": "aws_instance",
+      "version": "0.20.5"
+    },
+    "outputs": {
+      "aws_instance": {
+        "public_ip": "public_ip"
+      }
+    }
+  },
+  "output": {
+    "public_ip": {
+      "value": "${aws_instance.compute.public_ip}"
+    }
+  },
+  "provider": {
+    "aws": [
+      {
+        "access_key": "AKIATCKARTAA6SSTGIHJ",
+        "region": "ap-south-1",
+        "secret_key": "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"
+      }
+    ]
+  },
+  "resource": {
+    "aws_instance": {
+      "compute": {
+        "//": {
+          "metadata": {
+            "path": "aws_instance/compute",
+            "uniqueId": "compute"
+          }
+        },
+        "ami": "ami-013168dc3850ef002",
+        "instance_type": "t2.micro"
+      }
+    }
+  },
+  "terraform": {
+    "backend": {
+      "remote": {
+        "hostname": "app.terraform.io",
+        "organization": "shubhamkale119",
+        "workspaces": {
+          "name": "learn-cdktf"
+        }
+      }
+    },
+    "required_providers": {
+      "aws": {
+        "source": "aws",
+        "version": "5.41.0"
+      }
+    }
+  }
+}

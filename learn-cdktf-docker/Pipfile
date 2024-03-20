@@ -1,0 +1,17 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[requires]
+python_version = "3"
+
+[packages]
+cdktf = "~=0.20.5"
+pytest = "*"
+cdktf-cdktf-provider-docker = "*"
+cdktf-cdktf-provider-aws = "*"
+cdktf-cdktf-provider-google = "*"
+cdktf-cdktf-provider-azurerm = "*"
+cdktf-cdktf-provider-github = "*"
+cdktf-cdktf-provider-null = "*"

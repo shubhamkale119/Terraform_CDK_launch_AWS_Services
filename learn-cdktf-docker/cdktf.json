@@ -1,0 +1,14 @@
+{
+  "language": "python",
+  "app": "pipenv run python main.py",
+  "projectId": "ce3921df-65e2-4649-b24d-176b7458d1f7",
+  "sendCrashReports": "true",
+  "terraformProviders": [],
+  "terraformModules": [],
+  "codeMakerOutput": "imports",
+  "context": {
+    "AWS_REGION": "ap-south-1",
+    "AWS_ACCESS_KEY_ID": "AKIATCKARTAA6SSTGIHJ",
+    "AWS_SECRET_ACCESS_KEY": "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"
+  }
+}
